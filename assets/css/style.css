@@ -1,0 +1,95 @@
+:root {
+    --bluegray: #a2b9bc;
+    --off-white: #f2f2f2;
+    --sand: #b2ad7f;
+    --darkgray: #878f99;
+    --purple: #6b5b95;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bluegray);
+    color: var(--off-white);
+    font-family: 'Roboto Slab';
+}
+
+header {
+    padding: 20px;
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--purple);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.8vw;
+}
+
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    background-size: contain;
+    background-position: center;
+    display: flex;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    header {
+        justify-content: center;
+        display: block;
+        text-align: center;
+
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:980px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:575px) {
+    
+}
