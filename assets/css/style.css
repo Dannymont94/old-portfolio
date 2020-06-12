@@ -1,7 +1,6 @@
 :root {
     --bluegray: #a2b9bc;
     --off-white: #f2f2f2;
-    --sand: #b2ad7f;
     --darkgray: #878f99;
     --purple: #6b5b95;
 }
@@ -25,7 +24,7 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: -9999;
     background-color: #ffffff;
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -57,19 +56,17 @@ header nav ul,
     list-style: none;
 }
 
-header nav ul li a,
-#contact-me address a,
-.projects a {
+a {
     color: var(--off-white);
     padding: 10px 15px;
     text-decoration: none;
     font-size: 30px;
     font-style: normal;
+    position: relative;
+    z-index: 2;
 }
 
-.hero {
-    display: flex;
-}
+
 
 main {
     max-width: 85%;
@@ -121,7 +118,33 @@ img {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.project {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(../images/about-me.jpg);
+}
+
+.horiseon-refactor {
+    background-image: url(../images/about-me.jpg);
+}
+
+.gaming-survey {
+    background-image: url(../images/about-me.jpg);
+}
+
+.fake {
+    background-image: url(../images/about-me.jpg);
 }
 
 #contact-me address {
@@ -130,6 +153,77 @@ img {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
+}
+
+/* Nav Link Animation */
+nav a {
+    position: relative;
+}
+
+nav a:before {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--purple);
+    opacity: 0.8;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover:before {
+    transform: scaleY(1)
+}
+
+/* Recent Work Link Animation */
+.project {
+    position: relative;
+}
+
+.project:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--purple);
+    opacity: 0.8;
+    transform: scale(0);
+    transition-property: transform;
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover:before {
+    transform: scale(1);
+}
+/* Address Link Animation */
+address a {
+    position: relative;
+}
+
+address a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--purple);
+    opacity: 0.8;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition: transform 0.3s ease-out;
+}
+
+address a:hover:before {
+    transform: scaleX(1);
 }
 
 @media screen and (max-width:1024px) {
