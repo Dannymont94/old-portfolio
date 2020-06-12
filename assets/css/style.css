@@ -172,16 +172,16 @@ img {
     background-size: 150%;
 }
 
-.fake {
-    background-image: url(../images/about-me.jpg);
-}
-
 .contact-info {
     width: 70%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.small-window {
+    display: none;
 }
 
 /* Nav Link Animation */
@@ -314,6 +314,12 @@ nav a:hover:before {
     }
 }
 
+@media screen and (max-width:720px) {
+    .contact a {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width:620px) {
     header {
         padding: 5px;
@@ -352,6 +358,12 @@ nav a:hover:before {
     }
 }
 
-@media screen and (max-width:480px) {
-    
+@media screen and (max-width:580px) {
+    .big-window {
+        display: none;
+    }
+
+    .small-window {
+        display: flex;
+    }
 }
