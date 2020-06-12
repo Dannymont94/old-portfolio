@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Daniel Monterrosa</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Daniel Monterrosa</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
 
-<body>
-    <header>
-        <h1 class="name">Daniel Monterrosa</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Recent Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <p>Subtitle</p>
-    </section>
-
-    <section id="about-me">
-        <h2 class="section-title">About Me</h2>
-        <div class="description">
-            <p>UCF Coding Boot Camp Student based in Orlando, FL</p>
-            <p>Always learning and improving</p>
-        </div>
-    </section>
-    
-    <section id="work">
-        <h2 class="section-title">Recent Work</h2>
-            <div class="projects">
-                <div class="project">
-                    <div class="project-description">
-                        <h3 class="project-name">Run Buddy</h3>
-                        <p class="project-tools">HTML/CSS</p>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-description">
-                        <h3 class="project-name">Horiseon Refactor</h3>
-                        <p class="projecy-tools">HTML/CSS</p>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-description">
-                        <h3 class="project-name">Gaming Survey</h3>
-                        <p class="project-tools">HTML/CSS</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="contact-me">
-        <h2 class="section-title">Contact Me</h2>
-        <ul>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1 class="name">Daniel Monterrosa</h1>
             <nav>
-                <li><a href="tel:3055466832">305.546.6832</a></li>
-                <li><a href="mailto:dannym94@gmail.com">dannym94@gmail.com</a></li>
-                <li><a href="https://github.com/Dannymont94">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/daniel-monterrosa-7a3a1736/">LinkedIn</a></li>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">Recent Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
             </nav>
-        </ul>
-    </section>
+        </header>
 
-</body>
+        <main>
+            <!-- About Me Section -->
+            <section id="about-me">
+                <div class="left">
+                    <h2 class="section-title">About Me</h2>
+                    <img src="./assets/images/about-me.jpg" alt="Daniel Monterrosa headshot">
+                </div>
+                <div class="description">
+                    <p>UCF Coding Boot Camp student based in Orlando, FL. I love nature, gaming, and my wife-to-be. Accessibility is my passion.</p>
+                    <p>Always striving to learn, improve, and make every day count.</p>
+                </div>
+            </section>
+            <!-- Recent Work Section -->
+            <section id="work">
+                <div class="left">
+                    <h2 class="section-title">Recent Work</h2>
+                    <img src="./assets/images/work.jpg" alt="laptop displaying code on a desk with some succulents">
+                </div>
+                <div class="projects">
+                    <!-- Run Buddy Project -->
+                    <a class="project run-buddy" href="https://Dannymont94.github.io/run-buddy/">
+                        <div class="project-description">
+                            <h3 class="project-name">Run Buddy</h3>
+                            <p class="project-tools">HTML/CSS</p>
+                        </div>
+                    </a>
+                    <!-- Horiseon Refactor Project -->
+                    <a class="project horiseon-refactor" href="https://dannymont94.github.io/horiseon-refactor/">
+                        <div class="project-description">
+                            <h3 class="project-name">Horiseon Refactor</h3>
+                            <p class="projecy-tools">HTML/CSS</p>
+                        </div>
+                    </a>
+                    <!-- Gaming Survey Project -->
+                    <a class="project gaming-survey" href="https://dannymont94.github.io/gaming-survey/">
+                        <div class="project-description">
+                            <h3 class="project-name">Gaming Survey</h3>
+                            <p class="project-tools">HTML/CSS</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Contact Me Section -->
+            <section id="contact-me">
+                <div class="left">
+                    <h2 class="section-title">Contact Me</h2>
+                    <img src="./assets/images/contact-me.jpg" alt="mailboxes surrounded by dense foliage">
+                </div>
+                <address>
+                    <a href="tel:3055466832">305.546.6832</a>
+                    <a href="mailto:dannym94@gmail.com">dannym94@gmail.com</a>
+                    <a href="https://github.com/Dannymont94">GitHub</a>
+                    <a href="https://www.linkedin.com/in/daniel-monterrosa-7a3a1736/">LinkedIn</a>
+                </address>
+                
+            </section>
+        </main>
+    </body>
 </html>
