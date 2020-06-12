@@ -1,8 +1,8 @@
 :root {
     --bluegray: #a2b9bc;
-    --background: #b7cfc3;
-    --white: #ffffff;
-    --darkgray: #878f99;
+    --background: rgb(183, 207, 195);
+    --white: rgb(245, 246, 247);
+    --darkgray: #63707e;
     --purple: #6b5b95;
 }
 
@@ -35,7 +35,7 @@ body::before {
 
 header {
     padding: 20px 50px;
-    background-color: var(--darkgray);
+    background-color: var(--white);
     color: var(--purple);
     display: flex;
     justify-content: space-between;
@@ -68,9 +68,8 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    color: var(--darkgray)
 }
-
-
 
 main {
     max-width: 85%;
@@ -96,6 +95,7 @@ section {
     font-size: 2vw;
     line-height: 1.1;
     width: 25%;
+    text-shadow: 2px 2px 1px var(--purple);
 }
 
 img {
@@ -112,19 +112,23 @@ img {
     flex-flow: column wrap;
     justify-content: center;
     align-content: flex-start;
+    padding-left: 15px;
+    width: 75%;
 }
 
 .description p {
-    padding: 15px 0;
+    font-size: 20px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 5px var(--purple);
 }
 
 .projects {
     display: grid;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr); 
     grid-auto-rows: minmax(150px, 1fr);
     gap: 10px;
-    width: 70%;
+    width: 75%;
 }
 
 .project {
@@ -144,14 +148,18 @@ img {
 
 .project-description {
     padding: 5px;
+    color: var(--darkgray)
 }
 
 .project-name {
+    color: var(--white);
     font-size: 20px;
 }
 
 .project-tools {
+    color: var(--white);
     font-size: 15px;
+    
 }
 
 .run-buddy {
@@ -173,11 +181,16 @@ img {
 }
 
 .contact-info {
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.contact a {
+    color: var(--white);
+    text-shadow: 2px 2px 5px var(--purple);
 }
 
 .big {
@@ -214,7 +227,12 @@ nav a:before {
 }
 
 nav a:hover:before {
-    transform: scaleY(1)
+    transform: scaleY(1);
+    color: var(--white)
+}
+
+nav a:hover {
+    color: var(--white);
 }
 
 /* Recent Work Link Animation */
