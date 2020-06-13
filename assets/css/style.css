@@ -154,12 +154,13 @@ img {
 .project-name {
     color: var(--white);
     font-size: 20px;
+    text-shadow: 2px 2px 5px var(--purple);
 }
 
 .project-tools {
     color: var(--white);
     font-size: 15px;
-    
+    text-shadow: 2px 2px 5px var(--purple);
 }
 
 .run-buddy {
@@ -331,6 +332,10 @@ nav a:hover {
 
     .left img {
         margin-bottom: 10px;
+    }
+
+    .description {
+        width: 100%;
     }
 
     .description p {
