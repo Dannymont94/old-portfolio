@@ -164,19 +164,19 @@ img {
 }
 
 .run-buddy {
-    background-image: url(../images/run-buddy.png);
+    background-image: url(../images/run-buddy.jpg);
     background-position: top left;
     background-size: 160%;
 }
 
 .horiseon {
-    background-image: url(../images/horiseon-refactor.png);
+    background-image: url(../images/horiseon-refactor.jpg);
     background-position: center;
     background-size: 150%;
 }
 
 .gaming-survey {
-    background-image: url(../images/gaming-survey.png);
+    background-image: url(../images/gaming-survey.jpg);
     background-position: bottom left;
     background-size: 150%;
 }
