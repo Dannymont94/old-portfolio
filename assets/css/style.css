@@ -349,7 +349,8 @@ nav a:hover {
 
     .description p {
         padding: 0;
-        line-height: 2;
+        line-height: 1.2;
+        font-size: 18px;
     }
 
     .projects,
@@ -417,6 +418,10 @@ nav a:hover {
 @media screen and (max-width:580px) {
     .left {
         font-size: 5vw;
+    }
+
+    .projects {
+        gap: 16px;
     }
     
     .big-window {
