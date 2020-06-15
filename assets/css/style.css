@@ -1,6 +1,6 @@
 :root {
     --bluegray: rgb(162, 185, 188);
-    --background: rgb(183, 207, 195);
+    --background: rgb(23, 38, 34);
     --white: rgb(245, 246, 247);
     --darkgray: rgb(99, 112, 126);
     --purple: rgb(107, 91, 149);
@@ -13,7 +13,7 @@
 }
 
 body {
-    background: var(--bluegray);
+    background: var(--background);
     color: var(--white);
     font-family: 'Raleway';
 }
@@ -26,10 +26,9 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -9999;
-    background-color: var(--white);
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: bottom left;
     opacity: 0.4;
 }
 
