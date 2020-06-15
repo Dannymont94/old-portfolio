@@ -445,3 +445,9 @@ nav a:hover {
         display: flex;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .left {
+        font-size: 4.5vw;
+    }
+}
