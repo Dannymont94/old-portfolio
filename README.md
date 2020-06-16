@@ -1,14 +1,17 @@
 # Daniel Monterrosa - Portfolio
 
 ## Description
-My portfolio containing work samples for prospective employers to view.
+My portfolio containing a photo of me, a short description of me, a collection of my recent works, and various ways to contact me.
 
 ## Screenshots
-![Screenshot](https://user-images.githubusercontent.com/65088117/84557238-57504780-acf7-11ea-8aec-1c18838d4d81.png)
+![Screenshot](https://user-images.githubusercontent.com/65088117/84756174-7584a480-af90-11ea-8ed8-028d44f84cdf.png)
 
 ## Technologies Used
 * HTML
 * CSS
 
-## Contributions
+## Author
 Made by Daniel Monterrosa
+
+## Link
+https://dannymont94.github.io/
