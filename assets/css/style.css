@@ -58,7 +58,7 @@ header nav ul,
 }
 
 a {
-    color: var(--white);
+    color: var(--darkgray);
     padding: 5px 15px;
     text-decoration: none;
     font-size: 30px;
@@ -68,7 +68,6 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    color: var(--darkgray)
 }
 
 /* Content container */
@@ -148,6 +147,9 @@ img {
     min-width: 150px;
     background-color: var(--bluegray);
     background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
 }
 
 /* Showcase first project */
@@ -157,8 +159,9 @@ img {
 }
 
 .project-description {
-    padding: 5px;
-    color: var(--darkgray);
+    padding: 10px;
+    background: var(--purple);
+    border-radius: 5px;
 }
 
 .project-name {
@@ -174,24 +177,32 @@ img {
 }
 
 /* Project screenshots */
+.nomadica {
+    background-image: url(../images/nomadica.jpg);
+}
+
+.weather-dashboard {
+    background-image: url(../images/weather-dashboard.jpg);
+}
+
+.code-quiz {
+    background-image: url(../images/code-quiz.jpg);
+
+}
+
 .run-buddy {
     background-image: url(../images/run-buddy.jpg);
-    background-position: top left;
-    background-size: 160%;
 }
 
 .horiseon {
     background-image: url(../images/horiseon-refactor.jpg);
-    background-position: center;
-    background-size: 150%;
 }
 
 .gaming-survey {
     background-image: url(../images/gaming-survey.jpg);
-    background-position: bottom left;
-    background-size: 150%;
 }
 
+/* "Contact Me" rules */
 .contact-info {
     width: 75%;
     display: flex;
@@ -200,7 +211,6 @@ img {
     align-items: center;
 }
 
-/* "Contact Me" rules */
 .contact a {
     color: var(--white);
     text-shadow: 2px 2px 5px var(--purple);
@@ -248,11 +258,11 @@ nav a:hover {
 }
 
 /* Recent Work Hover Animation */
-.project-description {
+.project {
     position: relative;
 }
 
-.project-description:before {
+.project:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -261,14 +271,14 @@ nav a:hover {
     bottom: 0;
     left: 0;
     background: var(--purple);
-    opacity: 0.9;
+    opacity: 0.6;
     transform: scaleX(0);
     transform-origin: 0%;
     transition-property: transform;
     transition: transform 0.3s ease-out;
 }
 
-.project:hover .project-description:before {
+.project:hover:before {
     transform: scaleX(1);
 }
 
@@ -395,9 +405,10 @@ nav a:hover {
         width: 100px;
     }
 
+    /* project rows needs to be (# of projects + 1) for correct mobile formatting */
     .projects {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-auto-flow: column;
         gap: 20px;
     }
